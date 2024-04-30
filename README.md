@@ -14,6 +14,7 @@ Functionality:
 9.	In the POST request, the function checks the user's answers, calculates the score, and renders the "result.html" template with the score and total number of questions.
 10.	The code includes a conditional block that formats the "options" and "answers" keys in the `question` dictionary to include numbered labels for the options.
 11.	The application is run in debug mode when the script is executed directly.
+
 Usage:
 To use this application, you'll need to have the following prerequisites:
 •	Python and Flask installed.
