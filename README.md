@@ -16,9 +16,12 @@ Functionality:
 11.	The application is run in debug mode when the script is executed directly.
 
 Usage:
+
 To use this application, you'll need to have the following prerequisites:
+
 •	Python and Flask installed.
 •	AWS credentials configured with the appropriate permissions to use the Amazon Bedrock service.
 •	A valid agent alias ID for the Bedrock service
+
 Once you have these prerequisites, you can run the application by executing the script. The application will be available at http://localhost:5000/ in your web browser.
 
