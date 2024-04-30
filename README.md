@@ -1,6 +1,7 @@
 Certification Helper
 Purpose:
 This code is a Flask web application that generates a multiple-choice certification quiz for the AWS Solutions Architect certification. The quiz questions are generated using the Amazon Bedrock service, which provides access to various foundation models (FMs) for building generative AI applications.
+
 Functionality:
 1.	The code sets up the default AWS session region to "us-west-2" and creates two Boto3 clients: `bedrock_agent` and `bedrock_runtime`.
 2.	The `agent_alias_id` variable is set to a specific agent alias ID, which is used to identify the agent that will generate the quiz questions.
