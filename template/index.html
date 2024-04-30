@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Multiple Choice Certification Quiz</title>
+</head>
+<body>
+    <!-- Welcome message and information about the application -->
+    <h1>Welcome to the Certification Helper app. This will help you prepare yourself for giving any certification examination. This application is powered by Amazon Bedrock</h1>
+
+    <!-- Form for the multiple-choice quiz -->
+    <form method="POST" action="{{ url_for('index') }}">
+        <!-- Iterate through the list of questions -->
+        {% for question in questions %}
+        <div>
+            <!-- Display the question -->
+            <h2>{{question.question}}</h2>
+
+            <!-- Display the answer options from the 'answers' list -->
+            {% if(question.answers) %}
+                {% for option in question.answers %}
+                    <div>
+                        <input type="radio" name="{{question.question}}" value="{{option}}">
+                        <label>{{option}}</label>
+                    </div>
+                {% endfor %}
+            {% endif %}
+            <!-- If the 'options' key is present in the question, display those options -->
+            {% if(question.options) %}
+                {% for option in question.options %}
+                    <div>
+                        <input type="radio" name="{{question.question}}" value="{{option}}">
+                        <label>{{option}}</label>
+                    </div>
+                {% endfor %}
+            {% endif %}
+        </div>
+        {% endfor %}
+
+        <!-- Submit button for the form -->
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
