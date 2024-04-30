@@ -19,4 +19,4 @@ To use this application, you'll need to have the following prerequisites:
 •	AWS credentials configured with the appropriate permissions to use the Amazon Bedrock service.
 •	A valid agent alias ID for the Bedrock service
 Once you have these prerequisites, you can run the application by executing the script. The application will be available at http://localhost:5000/ in your web browser.
-![image](https://github.com/harshitshah65/certificatehelper/assets/12604953/dea28294-ace5-467a-8b3a-c228fe4dd50e)
+
